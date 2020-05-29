@@ -6,7 +6,7 @@ Java Compiler Collection is a set of three Java compilers: Maven, Gradle and Ant
 #### Contents of the website:
 
  - Home page
- - [Release notes](./Release-notes)
+ - [Release notes](./release-notes)
  
 ---
 ---
