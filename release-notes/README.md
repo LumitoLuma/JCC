@@ -19,5 +19,3 @@ First release of Java Compiler Collection (JCC). It includes this things:
 To download it visit our [downloads page](../#download-java-compiler-collection)
 
 Thanks for choosing JCC!
-
----
