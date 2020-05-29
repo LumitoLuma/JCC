@@ -36,4 +36,4 @@ Installation is very easy, but you will need some requirements.
 
 ## Download Java Compiler Collection:
 
-#### [Download now!](https://codeload.github.com/LumitoLuma/JCC/zip/master)
+[![Download Now!](https://s7.gifyu.com/images/downloadbutton.png)](https://codeload.github.com/LumitoLuma/JCC/zip/master)
