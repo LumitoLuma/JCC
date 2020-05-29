@@ -3,7 +3,21 @@
 Java Compiler Collection is a set of three Java compilers: Maven, Gradle and Ant. This tool installs them to `%AppData%\JCC\` and later adds them to the user PATH variable, so you can use Maven, Gradle and Ant from any place.
 
 ---
-Click [here](#download-java-compiler-collection) to download Program Overflow or scroll down to the button of this page.
+#### Contents of the website:
+
+ - Home page
+ - [Release notes](./Release-notes)
+ 
+---
+---
+#### Contents of this page:
+
+ - [Java Compiler Collection (JCC)](#java-compiler-collection-jcc)
+ - [Why JCC](#why-jcc)
+ - [Installing Java Compiler Collection](#installing-java-compiler-collection)
+    - [Requirements](#requirements)
+    - [How to install](#how-to-install)
+ - [Download Java Compiler Collection](#download-java-compiler-collection)
 
 ---
 
