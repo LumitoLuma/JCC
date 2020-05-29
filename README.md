@@ -26,10 +26,14 @@ Installation is very easy, but you will need some requirements.
 
 ### How to install:
 
-1. `git clone` or download this repo.
+1. `git clone` or download this repo from the button below.
 2. Open `cmd.exe` or Developer Command Prompt.
 3. Go to the working directory
 4. Run install.bat
 5. Wait a few minutes
 6. Restart command prompt after installation
 7. Done! Now you can run `ant`, `mvn` and `gradle` from any place!
+
+## Download Java Compiler Collection:
+
+#### [Download now!](https://codeload.github.com/LumitoLuma/JCC/zip/master)
