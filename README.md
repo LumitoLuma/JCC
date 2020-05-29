@@ -35,5 +35,4 @@ Installation is very easy, but you will need some requirements.
 7. Done! Now you can run `ant`, `mvn` and `gradle` from any place!
 
 ## Download Java Compiler Collection:
-
 [![Download Now!](https://s7.gifyu.com/images/downloadbutton.png)](https://codeload.github.com/LumitoLuma/JCC/zip/master)
