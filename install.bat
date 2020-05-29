@@ -62,7 +62,7 @@ for /d %%i in (apache-maven-3.6.3\*.*) do @xcopy /s /e /y "apache-maven-3.6.3\*.
 popd
 echo.
 pushd binaries\apache-ant-1.10.8-bin
-for /d %%i in (apache-ant-1.10.8\*.*) do @xcopy /s /e /y "apache-ant-1.10.8\*.*" "..\..\JCC\ant\"
+xcopy /s "apache-ant-1.10.8" "..\..\JCC\ant\"
 popd
 echo.
 pushd binaries\gradle-6.4.1-bin
@@ -92,10 +92,10 @@ echo.
 popd
 timeout /nobreak 1 >NUL 2>NUL
 echo | set /p message2="--- Cleaning preparation files..."
-rd /s /q binaries >NUL 2>NUL
-rd /s /q binaries >NUL 2>NUL
-rd /s /q JCC >NUL 2>NUL
-rd /s /q JCC >NUL 2>NUL
+rd /s /q binaries, JCC >NUL 2>NUL
+rd /s /q binaries, JCC >NUL 2>NUL
+del /f /q utils\*.class >NUL 2>NUL
+del /f /q utils\*.cs >NUL 2>NUL
 if ERRORLEVEL == 1 (echo. && echo Build error. Process aborted. && popd && exit /b)
 echo  Done!
 echo.
