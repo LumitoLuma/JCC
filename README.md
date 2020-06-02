@@ -32,6 +32,6 @@ Installation is very easy, but you will need some requirements.
 4. Run install.bat
 5. Wait a few minutes
 6. Restart command prompt after installation
-7. Done! Now you can run `ant`, `mvn` and `gradle` from any place!
+7. Done! Now you can run `jcc ant`, `jcc mvn` and `jcc gradle` from any place!
 
 #### To get more information about this project, visit it's website: [lumitoluma.github.io/JCC](https://lumitoluma.github.io/JCC)
