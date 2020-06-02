@@ -53,10 +53,10 @@ Installation is very easy, but you will need some requirements.
 6. Restart command prompt after installation
 7. Done! Now you can run `ant`, `mvn` and `gradle` from any place!
 
-## Download Java Compiler Collection:
-
-[![Download now!](https://s7.gifyu.com/images/downloadbutton.png)](https://codeload.github.com/LumitoLuma/JCC/zip/master)
-
 ### How to uninstall:
 
 Visit: [lumitoluma.github.io/JCC/uninstallation](https://lumitoluma.github.io/JCC/uninstallation)
+
+## Download Java Compiler Collection:
+
+[![Download now!](https://s7.gifyu.com/images/downloadbutton.png)](https://codeload.github.com/LumitoLuma/JCC/zip/master)
