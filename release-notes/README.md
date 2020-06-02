@@ -5,6 +5,7 @@
 
  - [Home page](..)
  - Release notes
+ - [Uninstallation](../uninstallation)
  
 ---
 
