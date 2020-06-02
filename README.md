@@ -34,4 +34,8 @@ Installation is very easy, but you will need some requirements.
 6. Restart command prompt after installation
 7. Done! Now you can run `jcc ant`, `jcc mvn` and `jcc gradle` from any place!
 
+### How to uninstall:
+
+Visit: [lumitoluma.github.io/JCC/uninstallation]
+
 #### To get more information about this project, visit it's website: [lumitoluma.github.io/JCC](https://lumitoluma.github.io/JCC)
