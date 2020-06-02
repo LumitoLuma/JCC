@@ -36,6 +36,6 @@ Installation is very easy, but you will need some requirements.
 
 ### How to uninstall:
 
-Visit: [lumitoluma.github.io/JCC/uninstallation]
+Visit: [lumitoluma.github.io/JCC/uninstallation](https://lumitoluma.github.io/JCC/uninstallation)
 
 #### To get more information about this project, visit it's website: [lumitoluma.github.io/JCC](https://lumitoluma.github.io/JCC)
