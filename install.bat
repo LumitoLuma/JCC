@@ -22,15 +22,15 @@ echo.
 echo --- 'utils' directory successfully compiled
 timeout /nobreak 1 >NUL 2>NUL
 echo.
-echo --- Downloading files...
+echo --- Downloading files (from dl.lumito.net)...
 md binaries >NUL 2>NUL
 pushd utils
 echo.
-java downloadfile https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.zip apache-maven-3.6.3-bin.zip ..\binaries\
+java downloadfile http://dl.lumito.net/public/repos/JCC/bin/apache-maven-3.6.3-bin.zip apache-maven-3.6.3-bin.zip ..\binaries\
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b)
-java downloadfile https://services.gradle.org/distributions/gradle-6.4.1-bin.zip  gradle-6.4.1-bin.zip ..\binaries\
+java downloadfile http://dl.lumito.net/public/repos/JCC/bin/gradle-6.5-bin.zip  gradle-6.5-bin.zip ..\binaries\
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b)
-java downloadfile https://downloads.apache.org/ant/binaries/apache-ant-1.10.8-bin.zip apache-ant-1.10.8-bin.zip ..\binaries\
+java downloadfile http://dl.lumito.net/public/repos/JCC/bin/apache-ant-1.10.8-bin.zip apache-ant-1.10.8-bin.zip ..\binaries\
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b)
 popd
 echo.
@@ -43,7 +43,7 @@ echo.
 copy ..\utils\unzipfile.class >NUL
 java unzipfile apache-maven-3.6.3-bin.zip
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b)
-java unzipfile gradle-6.4.1-bin.zip
+java unzipfile gradle-6.5-bin.zip
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b)
 java unzipfile apache-ant-1.10.8-bin.zip
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b)
@@ -65,8 +65,8 @@ pushd binaries\apache-ant-1.10.8-bin
 call xcopy /s /y "apache-ant-1.10.8" "..\..\JCC\ant\"
 popd
 echo.
-pushd binaries\gradle-6.4.1-bin
-call xcopy /s /y "gradle-6.4.1" "..\..\JCC\gradle\"
+pushd binaries\gradle-6.5-bin
+call xcopy /s /y "gradle-6.5" "..\..\JCC\gradle\"
 popd
 echo.
 echo --- Files successfully copied to preparation folder
@@ -104,7 +104,6 @@ echo.
 popd
 timeout /nobreak 1 >NUL 2>NUL
 echo | set /p message2="--- Cleaning preparation files..."
-rd /s /q binaries, JCC >NUL 2>NUL
 rd /s /q binaries, JCC >NUL 2>NUL
 del /f /q utils\*.class, utils\*.exe >NUL 2>NUL
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b)
