@@ -27,11 +27,11 @@ md binaries >NUL 2>NUL
 pushd utils
 echo.
 java downloadfile https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.zip apache-maven-3.6.3-bin.zip ..\binaries\
-if ERRORLEVEL == 1 (echo. && echo Build error. Process aborted. && popd && exit /b)
+if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b)
 java downloadfile https://services.gradle.org/distributions/gradle-6.4.1-bin.zip  gradle-6.4.1-bin.zip ..\binaries\
-if ERRORLEVEL == 1 (echo. && echo Build error. Process aborted. && popd && exit /b)
+if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b)
 java downloadfile https://downloads.apache.org/ant/binaries/apache-ant-1.10.8-bin.zip apache-ant-1.10.8-bin.zip ..\binaries\
-if ERRORLEVEL == 1 (echo. && echo Build error. Process aborted. && popd && exit /b)
+if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b)
 popd
 echo.
 echo --- Files downloaded successfully
@@ -42,11 +42,11 @@ pushd binaries
 echo.
 copy ..\utils\unzipfile.class >NUL
 java unzipfile apache-maven-3.6.3-bin.zip
-if ERRORLEVEL == 1 (echo. && echo Build error. Process aborted. && popd && exit /b)
+if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b)
 java unzipfile gradle-6.4.1-bin.zip
-if ERRORLEVEL == 1 (echo. && echo Build error. Process aborted. && popd && exit /b)
+if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b)
 java unzipfile apache-ant-1.10.8-bin.zip
-if ERRORLEVEL == 1 (echo. && echo Build error. Process aborted. && popd && exit /b)
+if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b)
 del unzipfile.class >NUL 2>NUL
 popd
 echo.
@@ -58,15 +58,15 @@ echo.
 md JCC >NUL 2>NUL
 timeout /nobreak 1 >NUL 2>NUL
 pushd binaries\apache-maven-3.6.3-bin
-for /d %%i in (apache-maven-3.6.3\*.*) do @xcopy /s /e /y "apache-maven-3.6.3\*.*" "..\..\JCC\maven\"
+call xcopy /s /y "apache-maven-3.6.3" "..\..\JCC\maven\"
 popd
 echo.
 pushd binaries\apache-ant-1.10.8-bin
-xcopy /s "apache-ant-1.10.8" "..\..\JCC\ant\"
+call xcopy /s /y "apache-ant-1.10.8" "..\..\JCC\ant\"
 popd
 echo.
 pushd binaries\gradle-6.4.1-bin
-for /d %%i in (gradle-6.4.1\*.*) do @xcopy /s /e /y "gradle-6.4.1\*.*" "..\..\JCC\gradle\"
+call xcopy /s /y "gradle-6.4.1" "..\..\JCC\gradle\"
 popd
 echo.
 echo --- Files successfully copied to preparation folder
@@ -76,17 +76,29 @@ echo --- Copying files to installation directory...
 echo.
 md %AppData%\JCC >NUL 2>NUL
 timeout /nobreak 1 >NUL 2>NUL
-call xcopy /S JCC %AppData%\JCC
+call xcopy /s /y JCC %AppData%\JCC
 echo.
 echo --- Files successfully copied to installation directory
 echo.
 timeout /nobreak 1 >NUL 2>NUL
-echo | set /p message="--- Adding bin folders to PATH..."
+echo --- Installing JCC CLI...
+echo.
+md %AppData%\JCC\bin >NUL 2>NUL
 pushd utils
-call addtopath %AppData%\JCC\ant\bin
-call addtopath %AppData%\JCC\gradle\bin
-call addtopath %AppData%\JCC\maven\bin
-if ERRORLEVEL == 1 (echo. && echo Build error. Process aborted. && popd && exit /b)
+java downloadfile http://dl.lumito.net/public/repos/JCC/bin/JCC.bat JCC.bat %AppData%\JCC\bin\
+if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b)
+md %AppData%\JCC\lib >NUL 2>NUL
+java downloadfile http://dl.lumito.net/public/repos/JCC/lib/help.exe help.exe %AppData%\JCC\lib\
+if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b)
+echo.
+popd
+echo --- JCC CLI successfully installed
+echo.
+timeout /nobreak 1 >NUL 2>NUL
+echo | set /p message="--- Adding bin folder to PATH..."
+pushd utils
+call addtopath %AppData%\JCC\bin
+if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b)
 echo  Done!
 echo.
 popd
@@ -94,9 +106,8 @@ timeout /nobreak 1 >NUL 2>NUL
 echo | set /p message2="--- Cleaning preparation files..."
 rd /s /q binaries, JCC >NUL 2>NUL
 rd /s /q binaries, JCC >NUL 2>NUL
-del /f /q utils\*.class >NUL 2>NUL
-del /f /q utils\*.cs >NUL 2>NUL
-if ERRORLEVEL == 1 (echo. && echo Build error. Process aborted. && popd && exit /b)
+del /f /q utils\*.class, utils\*.exe >NUL 2>NUL
+if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b)
 echo  Done!
 echo.
 timeout /nobreak 1 >NUL 2>NUL
