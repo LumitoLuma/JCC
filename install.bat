@@ -26,11 +26,11 @@ echo --- Downloading files (from dl.lumito.net)...
 md binaries >NUL 2>NUL
 pushd utils
 echo.
-java downloadfile http://dl.lumito.net/public/repos/JCC/bin/apache-maven-3.6.3-bin.zip apache-maven-3.6.3-bin.zip ..\binaries\
+java downloadfile https://dl.lumito.net/public/repos/JCC/bin/apache-maven-3.6.3-bin.zip apache-maven-3.6.3-bin.zip ..\binaries\
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b)
-java downloadfile http://dl.lumito.net/public/repos/JCC/bin/gradle-6.5-bin.zip  gradle-6.5-bin.zip ..\binaries\
+java downloadfile https://dl.lumito.net/public/repos/JCC/bin/gradle-6.5-bin.zip  gradle-6.5-bin.zip ..\binaries\
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b)
-java downloadfile http://dl.lumito.net/public/repos/JCC/bin/apache-ant-1.10.8-bin.zip apache-ant-1.10.8-bin.zip ..\binaries\
+java downloadfile https://dl.lumito.net/public/repos/JCC/bin/apache-ant-1.10.8-bin.zip apache-ant-1.10.8-bin.zip ..\binaries\
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b)
 popd
 echo.
@@ -85,10 +85,10 @@ echo --- Installing JCC CLI...
 echo.
 md %AppData%\JCC\bin >NUL 2>NUL
 pushd utils
-java downloadfile http://dl.lumito.net/public/repos/JCC/bin/JCC.bat JCC.bat %AppData%\JCC\bin\
+java downloadfile https://dl.lumito.net/public/repos/JCC/bin/JCC.bat JCC.bat %AppData%\JCC\bin\
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b)
 md %AppData%\JCC\lib >NUL 2>NUL
-java downloadfile http://dl.lumito.net/public/repos/JCC/lib/help.exe help.exe %AppData%\JCC\lib\
+java downloadfile https://dl.lumito.net/public/repos/JCC/lib/help.exe help.exe %AppData%\JCC\lib\
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b)
 echo.
 popd
