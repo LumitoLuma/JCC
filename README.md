@@ -59,4 +59,4 @@ Visit: [lumitoluma.github.io/JCC/uninstallation](https://lumitoluma.github.io/JC
 
 ## Download Java Compiler Collection:
 
-[![Download now!](https://s7.gifyu.com/images/downloadbutton.png)](https://codeload.github.com/LumitoLuma/JCC/zip/master)
+[![Download now!](https://images.lumito.net/GitHub/JCC/downloadbutton.png)](https://codeload.github.com/LumitoLuma/JCC/zip/master)
