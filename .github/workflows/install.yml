@@ -17,7 +17,7 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Set up .NET Framework
-      uses: microsoft/setup-msbuild@v1
+    - name: Set up C# compiler
+      uses: yoavain/Setup-CSC@v5
     - name: Install
       run: cmd /c install.bat
