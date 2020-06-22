@@ -36,7 +36,7 @@ java downloadfile https://dl.lumito.net/public/repos/JCC/bin/refreshenv.cmd refr
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b 1)
 java downloadfile https://dl.lumito.net/public/repos/JCC/bin/JCC.bat JCC.bat .\
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b 1)
-java downloadfile https://dl.lumito.net/public/repos/JCC/lib/help.exe help.exe .\
+java downloadfile https://dl.lumito.net/public/repos/JCC/bin/help.exe help.exe .\
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b 1)
 popd
 echo.
