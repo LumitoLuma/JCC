@@ -26,17 +26,17 @@ echo --- Downloading files (from dl.lumito.net)...
 md binaries >NUL 2>NUL
 pushd utils
 echo.
-java downloadfile https://dl.lumito.net/public/repos/JCC/bin/apache-maven-3.6.3-bin.zip apache-maven-3.6.3-bin.zip ..\binaries\
+java downloadfile https://dl.lumito.net/public/repos/JCC/apache-maven-3.6.3-bin.zip apache-maven-3.6.3-bin.zip ..\binaries\
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b 1)
-java downloadfile https://dl.lumito.net/public/repos/JCC/bin/gradle-6.5-bin.zip  gradle-6.5-bin.zip ..\binaries\
+java downloadfile https://dl.lumito.net/public/repos/JCC/gradle-6.5-bin.zip  gradle-6.5-bin.zip ..\binaries\
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b 1)
-java downloadfile https://dl.lumito.net/public/repos/JCC/bin/apache-ant-1.10.8-bin.zip apache-ant-1.10.8-bin.zip ..\binaries\
+java downloadfile https://dl.lumito.net/public/repos/JCC/apache-ant-1.10.8-bin.zip apache-ant-1.10.8-bin.zip ..\binaries\
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b 1)
-java downloadfile https://dl.lumito.net/public/repos/JCC/bin/refreshenv.cmd refreshenv.cmd .\
+java downloadfile https://dl.lumito.net/public/repos/JCC/refreshenv.cmd refreshenv.cmd .\
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b 1)
-java downloadfile https://dl.lumito.net/public/repos/JCC/bin/JCC.bat JCC.bat .\
+java downloadfile https://dl.lumito.net/public/repos/JCC/JCC.bat JCC.bat .\
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b 1)
-java downloadfile https://dl.lumito.net/public/repos/JCC/bin/help.exe help.exe .\
+java downloadfile https://dl.lumito.net/public/repos/JCC/help.exe help.exe .\
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b 1)
 popd
 echo.
