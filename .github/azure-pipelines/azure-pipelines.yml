@@ -14,5 +14,13 @@ steps:
       echo "##vso[task.setvariable variable=PATH]$(JAVA_HOME_11_X64)\bin;$(PATH)"
   displayName: Setup Java
 
+- task: NuGetToolInstaller@1
+  inputs:
+    versionSpec: 
+    checkLatest: true
+
+- script: nuget install dotNETFramework
+  displayName: Install .NET Framework
+
 - script: where msbuild.exe && install.bat
   displayName: Install JCC
