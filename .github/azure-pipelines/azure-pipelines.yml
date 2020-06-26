@@ -20,7 +20,7 @@ steps:
   displayName: Installing NuGet
 
 - script: nuget install Microsoft.Net.Compilers
-  displayName: Installing .NET Compilers and adding them to PATH
+  displayName: Installing .NET Compilers
 
 - script: install.bat
   displayName: Installing JCC
