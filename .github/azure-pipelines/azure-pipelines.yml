@@ -14,8 +14,8 @@ steps:
       echo "##vso[task.setvariable variable=PATH]$(JAVA_HOME_11_X64)\bin;$(PATH)"
   displayName: Setting up Java
 
-- script: PATH=%PATH%;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Roslyn\
-  displayName: Adding csc.exe to PATH
+- script: dir "C:\Program Files (x86)\Microsoft Visual Studio\2019\"
+  displayName: Finding Visual Studio version
 
 - script: install.bat
   displayName: Installing JCC
