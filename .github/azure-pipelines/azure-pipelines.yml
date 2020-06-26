@@ -12,14 +12,15 @@ steps:
     script: |
       echo "##vso[task.setvariable variable=JAVA_HOME]$(JAVA_HOME_11_X64)"
       echo "##vso[task.setvariable variable=PATH]$(JAVA_HOME_11_X64)\bin;$(PATH)"
-  displayName: Setup Java
+  displayName: Setting up Java
 
 - task: NuGetToolInstaller@1
   inputs:
     checkLatest: true
+  displayName: Installing NuGet
 
-- script: nuget install Microsoft.Net.Compilers
-  displayName: Install .NET Compilers
+- script: nuget install Microsoft.Net.Compilers && PATH=%PATH%;.\Microsoft.Net.Compilers.3.6.0\tools
+  displayName: Installing .NET Compilers and adding them to PATH
 
 - script: install.bat
-  displayName: Install JCC
+  displayName: Installing JCC
