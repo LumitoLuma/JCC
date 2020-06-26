@@ -16,11 +16,10 @@ steps:
 
 - task: NuGetToolInstaller@1
   inputs:
-    versionSpec: 
     checkLatest: true
 
 - script: nuget install dotNETFramework
   displayName: Install .NET Framework
 
-- script: where msbuild.exe && install.bat
+- script: install.bat
   displayName: Install JCC
