@@ -14,10 +14,8 @@ steps:
       echo "##vso[task.setvariable variable=PATH]$(JAVA_HOME_11_X64)\bin;$(PATH)"
   displayName: Setting up Java
 
-- task: NuGetCommand@2
-  inputs:
-    command: 'custom'
-    arguments: 'install Microsoft.Net.Compilers'
+- script: PATH=%PATH%;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Roslyn\
+  displayName: Adding csc.exe to PATH
 
 - script: install.bat
   displayName: Installing JCC
