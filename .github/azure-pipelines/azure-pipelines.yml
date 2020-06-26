@@ -19,7 +19,7 @@ steps:
     checkLatest: true
   displayName: Installing NuGet
 
-- script: nuget install Microsoft.Net.Compilers && PATH=%PATH%;.\Microsoft.Net.Compilers.3.6.0\tools
+- script: nuget install Microsoft.Net.Compilers
   displayName: Installing .NET Compilers and adding them to PATH
 
 - script: install.bat
