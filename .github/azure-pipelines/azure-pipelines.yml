@@ -6,11 +6,12 @@ pool:
 
 steps:
 
-- task: JavaToolInstaller@0
+- task: PowerShell@2
   inputs:
-    versionSpec: '8'
-    jdkArchitectureOption: 'x86'
-    jdkSourceOption: 'PreInstalled'
+    targetType: 'inline'
+    script: |
+      echo "##vso[task.setvariable variable=JAVA_HOME]$(JAVA_HOME_11_X64)"
+      echo "##vso[task.setvariable variable=PATH]$(JAVA_HOME_11_X64)\bin;$(PATH)"
 
 - script: install.bat
   displayName: Install JCC
