@@ -18,8 +18,8 @@ steps:
   inputs:
     checkLatest: true
 
-- script: nuget install dotNETFramework
-  displayName: Install .NET Framework
+- script: nuget install Microsoft.Net.Compilers
+  displayName: Install .NET Compilers
 
 - script: install.bat
   displayName: Install JCC
