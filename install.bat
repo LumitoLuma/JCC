@@ -28,7 +28,7 @@ pushd utils
 echo.
 java downloadfile https://dl.lumito.net/public/repos/JCC/apache-maven-3.6.3-bin.zip apache-maven-3.6.3-bin.zip ..\binaries\
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b 1)
-java downloadfile https://dl.lumito.net/public/repos/JCC/gradle-6.5-bin.zip  gradle-6.5-bin.zip ..\binaries\
+java downloadfile https://dl.lumito.net/public/repos/JCC/gradle-6.5.1-bin.zip  gradle-6.5-bin.zip ..\binaries\
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b 1)
 java downloadfile https://dl.lumito.net/public/repos/JCC/apache-ant-1.10.8-bin.zip apache-ant-1.10.8-bin.zip ..\binaries\
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b 1)
@@ -49,7 +49,7 @@ echo.
 copy ..\utils\unzipfile.class >NUL
 java unzipfile apache-maven-3.6.3-bin.zip
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b 1)
-java unzipfile gradle-6.5-bin.zip
+java unzipfile gradle-6.5.1-bin.zip
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b 1)
 java unzipfile apache-ant-1.10.8-bin.zip
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b 1)
@@ -71,8 +71,8 @@ pushd binaries\apache-ant-1.10.8-bin
 call xcopy /s /y "apache-ant-1.10.8" "..\..\JCC\ant\"
 popd
 echo.
-pushd binaries\gradle-6.5-bin
-call xcopy /s /y "gradle-6.5" "..\..\JCC\gradle\"
+pushd binaries\gradle-6.5.1-bin
+call xcopy /s /y "gradle-6.5.1" "..\..\JCC\gradle\"
 popd
 echo.
 echo --- Files successfully copied to preparation folder
