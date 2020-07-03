@@ -28,7 +28,7 @@ pushd utils
 echo.
 java downloadfile https://dl.lumito.net/public/repos/JCC/apache-maven-3.6.3-bin.zip apache-maven-3.6.3-bin.zip ..\binaries\
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b 1)
-java downloadfile https://dl.lumito.net/public/repos/JCC/gradle-6.5.1-bin.zip  gradle-6.5-bin.zip ..\binaries\
+java downloadfile https://dl.lumito.net/public/repos/JCC/gradle-6.5.1-bin.zip  gradle-6.5.1-bin.zip ..\binaries\
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b 1)
 java downloadfile https://dl.lumito.net/public/repos/JCC/apache-ant-1.10.8-bin.zip apache-ant-1.10.8-bin.zip ..\binaries\
 if ERRORLEVEL == 1 (echo. && echo Installation error. Process aborted. && popd && exit /b 1)
