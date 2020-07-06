@@ -35,8 +35,7 @@ Installation is very easy, but you will need some requirements.
 3. Go to the working directory
 4. Run install.bat
 5. Wait a few minutes
-6. Restart command prompt after installation
-7. Done! Now you can run `jcc ant`, `jcc mvn` and `jcc gradle` from any place!
+6. Done! Now you can run `jcc ant`, `jcc mvn` and `jcc gradle` from any place!
 
 ### How to uninstall:
 
