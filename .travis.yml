@@ -4,7 +4,6 @@ mono: none
 install:
   - choco install jdk8
   - choco install visualstudio2019buildtools --package-parameters "--add Microsoft.VisualStudio.Component.VC.Tools.x86.x64"
-  - refreshenv
 script:
   - export ROSLYN_PATH="C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\Roslyn\"
   - export PATH=$ROSLYN_PATH:$PATH
