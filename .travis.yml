@@ -6,6 +6,7 @@ env:
 install:
   - choco install jdk8
   - choco install visualstudio2019buildtools --package-parameters "--add Microsoft.VisualStudio.Component.VC.Tools.x86.x64"
+  - refreshenv
 script:
   - export PATH=$ROSLYN_PATH:$PATH
   - ./install.bat
