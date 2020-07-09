@@ -8,4 +8,5 @@ script:
   - set ROSLYN_PATH="C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\Roslyn"
   - set JAVA_PATH="C:\Program Files\Java\jdk1.8.0_211\bin"
   - export PATH=$ROSLYN_PATH:$PATH
-  - cmd /c install.bat
+  - chmod +x install.bat
+  - ./install.bat
