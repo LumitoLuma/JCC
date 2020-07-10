@@ -1,6 +1,6 @@
 # Java Compiler Collection (JCC)
 
-Java Compiler Collection is a set of three Java compilers: Maven, Gradle and Ant. This tool installs them to `%AppData%\JCC\` and later adds them to the user PATH variable, so you can use Maven, Gradle and Ant from any place.
+Java Compiler Collection is a set of three Java compilers: Maven, Gradle and Ant. This tool installs them to `%AppData%\JCC\` and adds its 'Bin' folders to the user PATH variable, so you can use Maven, Gradle and Ant from any place.
 
 ## Why JCC?
 
