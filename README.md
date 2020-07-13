@@ -26,9 +26,10 @@ Installation is very easy, but you will need some requirements.
 
 ### How to install:
 
-[![Install](https://github.com/LumitoLuma/JCC/workflows/Install/badge.svg)](https://github.com/LumitoLuma/JCC/actions?query=workflow%3AInstall)
-[![Build status](https://ci.appveyor.com/api/projects/status/k2iwyam4nmkoqj82?svg=true)](https://ci.appveyor.com/project/LumitoLuma/JCC)
-[![Build Status](https://dev.azure.com/LumitoLuma/GitHub/_apis/build/status/LumitoLuma.JCC?branchName=master)](https://dev.azure.com/LumitoLuma/GitHub/_build/latest?definitionId=8&branchName=master)
+| [![Install](https://github.com/LumitoLuma/JCC/workflows/Install/badge.svg)](https://github.com/LumitoLuma/JCC/actions?query=workflow%3AInstall) |
+[![Build status](https://ci.appveyor.com/api/projects/status/k2iwyam4nmkoqj82?svg=true)](https://ci.appveyor.com/project/LumitoLuma/JCC) |
+[![Build Status](https://dev.azure.com/LumitoLuma/GitHub/_apis/build/status/LumitoLuma.JCC?branchName=master)](https://dev.azure.com/LumitoLuma/GitHub/_build/latest?definitionId=8&branchName=master) |
+|-|-|-|
 
 1. `git clone` or download this repo.
 2. Open `cmd.exe` or Developer Command Prompt.
