@@ -63,3 +63,15 @@ Visit: [lumitoluma.github.io/JCC/uninstallation](https://lumitoluma.github.io/JC
 ## Download Java Compiler Collection:
 
 [![Download now!](https://images.lumito.net/GitHub/JCC/downloadbutton.png)](https://codeload.github.com/LumitoLuma/JCC/zip/master)
+
+## Contributing to the project
+If you want to contribute to the project, please contact me through [lumito.net/contact](https://lumito.net/contact).
+
+You can contribute with the following things:
+
+-   Code improvements
+-   Ideas for future programs / services.
+
+Reporting bugs there is not allowed, unless you have reported them through [Issues](https://github.com/LumitoLuma/JCC/issues) tab and you have not received any comments for a while (minimum a week).
+
+**© 2020, Lumito - [www.lumito.net](https://lumito.net)**
