@@ -32,7 +32,7 @@ Installation is very easy, but you will need some requirements.
 1. `git clone` or download this repo.
 2. Open `cmd.exe` or Developer Command Prompt.
 3. Go to the working directory
-4. Run install.bat
+4. Run `install.bat`
 5. Wait a few minutes
 6. Done! Now you can run `jcc ant`, `jcc mvn` and `jcc gradle` from any place!
 
