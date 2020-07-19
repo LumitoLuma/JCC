@@ -17,7 +17,7 @@ public class downloadfile {
                     fileOutputStream.write(dataBuffer, 0, bytesRead);
                 }
                 System.out.println(" Done!");
-                Runtime.getRuntime().exit(0);
+                System.exit(0);
         } catch (IOException e) {
             System.out.println(" Error while downloading " + downloadname);
             System.exit(1);
@@ -30,7 +30,7 @@ public class downloadfile {
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("No valid arguments specified. Usage:\n");
             System.out.println("\'java downloadfile [file URL] [file name] [target directory]\'");
-            Runtime.getRuntime().exit(1);
+            System.exit(1);
         }
     }
 }
