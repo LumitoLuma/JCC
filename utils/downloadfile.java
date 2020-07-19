@@ -7,7 +7,7 @@ public class downloadfile {
     
     static byte error;
     
-    public static void Download(String downloadfile, String downloadname, String installdir) {
+    public static void download(String downloadfile, String downloadname, String installdir) {
         System.out.print("Downloading " + downloadname + "...");
         try (BufferedInputStream in = new BufferedInputStream(new URL(downloadfile).openStream());
             FileOutputStream fileOutputStream = new FileOutputStream(installdir + downloadname)) {
@@ -17,7 +17,7 @@ public class downloadfile {
                     fileOutputStream.write(dataBuffer, 0, bytesRead);
                 }
                 System.out.println(" Done!");
-                System.exit(0);
+                Runtime.getRuntime().exit(0);
         } catch (IOException e) {
             System.out.println(" Error while downloading " + downloadname);
             System.exit(1);
@@ -26,11 +26,11 @@ public class downloadfile {
     
     public static void main(String[] args) {
         try {
-            Download(args[0], args[1], args[2]);
+            download(args[0], args[1], args[2]);
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("No valid arguments specified. Usage:\n");
             System.out.println("\'java downloadfile [file URL] [file name] [target directory]\'");
-            System.exit(1);
+            Runtime.getRuntime().exit(1);
         }
     }
 }
