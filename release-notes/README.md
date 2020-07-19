@@ -3,9 +3,9 @@
 ---
 **Contents of the website:**
 
- -[Home page](..)
- -   Release notes
- -[Uninstallation](../uninstallation)
+-   [Home page](..)
+-   Release notes
+-   [Uninstallation](../uninstallation)
  
 ---
 
