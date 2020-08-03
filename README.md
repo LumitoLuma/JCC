@@ -75,5 +75,3 @@ You can contribute with the following things:
 -   Ideas for future programs / services.
 
 Reporting bugs there is not allowed, unless you have reported them through [Issues](https://github.com/LumitoLuma/JCC/issues) tab and you have not received any comments for a while (minimum a week).
-<br><br>
-**© 2020, Lumito - [www.lumito.net](https://lumito.net)**
