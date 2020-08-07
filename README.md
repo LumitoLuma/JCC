@@ -18,7 +18,7 @@ Installation is very easy, but you will need some requirements.
 
 ### Requirements
 -   Java SE Development kit >=8 ([lumi.gq/jdk](https://lumi.gq/jdk) if you don't have it)
--   Microsoft .NET Framework >= 4.0 (To compile and install `addtopath.cs`) and added to PATH. OR Microsoft Visual Studio 2019 and install from developer command prompt.
+-   Microsoft .NET Framework >= 4.0 (To compile and run `addtopath.cs`) and added to PATH. OR Microsoft Visual Studio 2019 and install from developer command prompt.
 
 ### How to install
 | [![Install](https://github.com/LumitoLuma/JCC/workflows/Install/badge.svg)](https://github.com/LumitoLuma/JCC/actions?query=workflow%3AInstall) | [![Build status](https://ci.appveyor.com/api/projects/status/k2iwyam4nmkoqj82?svg=true)](https://ci.appveyor.com/project/LumitoLuma/JCC) | [![Build Status](https://dev.azure.com/LumitoLuma/GitHub/_apis/build/status/LumitoLuma.JCC?branchName=master)](https://dev.azure.com/LumitoLuma/GitHub/_build/latest?definitionId=8&branchName=master) |
