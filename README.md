@@ -9,7 +9,7 @@ But there are some tools called 'wrappers' that make this work easy, since they 
 
 So I thought how can I make a tool that makes possible to use those compiler without needing to copy them every time you want to develop a Java application, so I developed JCC.
 
-It installs the three compilers in your computer (exactly at `%AppData%\JCC` folder) and then adds that folders to PATH user environment variable.
+It installs the three compilers in your computer (at `%AppData%\JCC` folder) and then adds that folders to PATH user environment variable.
 
 Yo install JCC, continue reading this document.
 
