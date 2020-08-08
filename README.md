@@ -11,7 +11,7 @@ So I thought how can I make a tool that makes possible to use those compiler wit
 
 It installs the three compilers in your computer (at `%AppData%\JCC` folder) and then adds that folders to PATH user environment variable.
 
-Yo install JCC, continue reading this document.
+To install JCC, continue reading this document.
 
 ## Installing Java Compiler Collection
 Installation is very easy, but you will need some requirements.
