@@ -67,7 +67,7 @@ Visit: [lumitoluma.github.io/JCC/uninstallation](https://lumitoluma.github.io/JC
 [![Download now!](https://images.lumito.net/GitHub/JCC/downloadbutton.png)](https://codeload.github.com/LumitoLuma/JCC/zip/master)
 
 ## Contributing to the project
-If you want to contribute to the project, please contact me through [lumito.net/contact](https://lumito.net/contact).
+If you want to contribute to the project, please contact me through [lumito.net/contact](https://lumito.net/contact) or open a Pull Request.
 
 You can contribute with the following things:
 
