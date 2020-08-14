@@ -4,6 +4,7 @@ chcp 65001 >NUL
 IF /I "%~1"=="version"    GOTO version
 IF /I "%~1"=="/version"   GOTO version
 IF /I "%~1"=="-version"   GOTO version
+IF /I "%~1"=="--version"  GOTO version
 IF /I "%~1"=="v"          GOTO version
 IF /I "%~1"=="/v"         GOTO version
 IF /I "%~1"=="-v"         GOTO version
