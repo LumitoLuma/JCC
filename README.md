@@ -17,7 +17,7 @@ To install JCC, continue reading this document.
 Installation is very easy, but you will need some requirements.
 
 ### Requirements
--   Java SE Development kit >=8 ([lumi.gq/jdk](https://lumi.gq/jdk) if you don't have it)
+-   Java SE Development kit >=8 (visit [lumi.gq/jdk](https://lumi.gq/jdk) if you don't have it)
 -   Microsoft .NET Framework >= 4.0 (To compile and run `addtopath.cs`) and added to PATH. OR Microsoft Visual Studio 2019 and install from developer command prompt.
 
 ### How to install
