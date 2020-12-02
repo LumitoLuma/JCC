@@ -18,6 +18,6 @@ jobs:
       with:
         java-version: 1.8
     - name: Set up C# compiler
-      uses: yoavain/Setup-CSC@v5
+      uses: yoavain/Setup-CSC@v7
     - name: Install
       run: cmd /c install.bat
