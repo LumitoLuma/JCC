@@ -28,7 +28,7 @@ echo.
 echo --- 'utils' directory successfully compiled
 timeout /nobreak 1 >NUL 2>NUL
 echo.
-echo --- Downloading files (from dl.lumito.net)...
+echo --- Downloading files...
 md binaries >NUL 2>NUL
 pushd utils
 echo.
